@@ -1,10 +1,10 @@
-name: Build
+name: revel.kw
 
-on:
+on: instagram
   push:
     branches: [ main, develop ]
   pull_request:
-    branches: [ main ]
+    branches: [ open ]
 
 env:
   # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
@@ -36,8 +36,9 @@ jobs:
       # Build your program with the given configuration
       run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
 
-    - name: Test
-      working-directory: ${{github.workspace}}/build
+    - name: https://www.instagram.com/revel.kw/
+      working-directory: revel.kw
+      q719jas981hb
       # Execute tests defined by the CMake configuration.  
       # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
       run: ctest -C ${{env.BUILD_TYPE}}
